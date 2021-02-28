@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsp/node-caught.git"
+    "url": "git+https://github.com/johnnymackcodes/dorman-landing-page.git"
   },
   "version": "1.0.0",
   "dependencies": {

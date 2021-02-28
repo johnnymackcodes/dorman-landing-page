@@ -17,6 +17,10 @@ html {
   line-height: 1.4;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -86,6 +90,108 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+section.header-video {
+  background: url(../img/hero-banner.png) no-repeat top / cover;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.content-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.content-container > h1 {
+  text-align: center;
+  font: normal normal bold 60px/60px Open Sans;
+  letter-spacing: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.content-container > p {
+  text-align: center;
+  font: normal normal normal 21px/30px Open Sans;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 1em 0;
+}
+
+.content-container > .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-container > .button-container > button {
+  background: transparent;
+  border: 2px solid #FB6317;
+  color: white;
+  border-radius: 5px;
+  padding: .5em;
+  flex: 1 0 23%;
+  margin: 1%;
+  text-transform: uppercase;
+  font-size: calc(.5em + .5vw);
+  transition: background-color 0.25s ease;
+}
+
+.content-container > .button-container > button:hover {
+  background: #FB6317;
+}
+
+.fa-play:before {
+  color: white;
+  font-size: 1.5em;
+  margin: 20px 20px 40px !important;
+  display: block;
+  border: 2px solid;
+  padding: .6em .6em .6em .75em;
+  border-radius: 90px;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.fa-play:hover:before {
+  background: white;
+  color: black;
+  border-color: white;
+}
+
+section.intro-copy {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  padding: 4vw;
+}
+
+section.intro-copy h2{
+
+}
+
+section.intro-copy > button {
+  background: #FB6317;
+  color: white;
+  border-radius: 5px;
+  padding: 1em 2em;
+  margin: 1%;
+  text-transform: uppercase;
+  border: none;
+  font-size: calc(.5em + .5vw);
+  transition: background-color 0.25s ease;
+}
+
+section.intro-copy > button:hover {
+  background: transparent;
+  border: 2px solid #FB6317;
+  color: #FB6317;
+}
 
 /* ==========================================================================
    Helper classes
@@ -180,9 +286,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
