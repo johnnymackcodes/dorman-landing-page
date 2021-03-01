@@ -91,12 +91,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+p {
+  line-height: 1.5;
+}
+
 
 section.header-video {
   background: url(../img/hero-banner.png) no-repeat top / cover;
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   align-items: center;
 }
 
@@ -171,8 +175,37 @@ section.intro-copy {
   padding: 4vw;
 }
 
-section.intro-copy h2{
+section.intro-copy h2, section.related-reads h2 {
+  position: relative;
+  width: 400px;
+  padding: .5em 1em 0;
+  margin: 0;
+  text-transform: uppercase;
+}
 
+section.intro-copy p {
+  max-width: 800px;
+  margin: 1.25em auto;
+}
+
+section.intro-copy .x-particle.is-primary {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #FB6317;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.intro-copy .x-particle.is-secondary {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: #FB6317;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 section.intro-copy > button {
@@ -182,15 +215,69 @@ section.intro-copy > button {
   padding: 1em 2em;
   margin: 1%;
   text-transform: uppercase;
-  border: none;
+  border: 2px solid #FB6317;
   font-size: calc(.5em + .5vw);
   transition: background-color 0.25s ease;
 }
 
 section.intro-copy > button:hover {
   background: transparent;
-  border: 2px solid #FB6317;
   color: #FB6317;
+}
+
+section.related-reads {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 4vw 0 4vw 4vw;
+}
+
+section.related-reads .articles {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2vw 0;
+  overflow-x: auto;
+}
+
+section.related-reads .articles::-webkit-scrollbar {
+  display: none;
+}
+
+section.related-reads article {
+  background: #F7F7F7;
+  flex: 1 0 44%;
+  margin: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: 0 0 13px rgba(0, 0, 0, .25);
+}
+
+section.related-reads .content-placeholder {
+  flex: 1 0 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.article-title {
+  padding: 2vw;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.article-p {
+  padding: 4vw 2vw;
+  color: #909090;
+}
+
+.article-read-time {
+  padding: 2vw;
+  color: #909090;
+  font-size: .8em;
+}
+
+section.related-reads .content-placeholder .featured-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 /* ==========================================================================
