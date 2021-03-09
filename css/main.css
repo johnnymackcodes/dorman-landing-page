@@ -249,6 +249,26 @@ section.related-reads article {
   display: flex;
   flex-flow: row nowrap;
   box-shadow: 0 0 13px rgba(0, 0, 0, .25);
+  position: relative;
+  min-height: 400px;
+}
+
+.video-layover{
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.video-layover .article-title{
+  color: white;
+  text-align: center;
+  padding-bottom: .5em;
+  margin: -3em 0 0;
 }
 
 section.related-reads .content-placeholder {
@@ -261,6 +281,15 @@ section.related-reads .content-placeholder {
   padding: 2vw;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.overlay {
+  background: #17263E;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  z-index: 99;
 }
 
 .article-p {
